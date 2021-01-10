@@ -20,6 +20,14 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
+These CFD data files were then loaded into Python (\textsl{version 3.7.4}) \cite{van1995python}, for use in the training and validation of the machine learning models. In the context of the project, the following python library versions where used to compile the associated programs:
+
+Matplotlib: 3.3.1
+NumPy: 1.19.1
+Pandas: 1.14
+PyTorch: 1.7.0
+Scikit-learn: 0.23.1
+
 ```
 Give the example
 ```
