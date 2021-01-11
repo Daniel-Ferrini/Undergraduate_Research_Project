@@ -15,7 +15,7 @@ Data_Range = 'Original'
                                                                             # indicate CFD evaluation data range
                                                                             # accepts: 'Original',
                                                                             # 'Lower-bound', or 'Upper-bound'
-ML_Model = 'Random Forest'
+ML_Model = 'Neural Network'
                                                                             # indicate desired ML model
                                                                             # accepts: 'Neural Network',
                                                                             # 'Random Forest', or 'Autoencoder'
