@@ -1,96 +1,68 @@
 # Project Title
 
-One Paragraph of project description goes here
+This is the code repository for the 41st 2020 UCT final year undergraduate research project, whereby three machine learning models (Neural Network, Random Forest, Autoencoder) were built and evaluated on CFD data sourced from a simple 2D T-piece mixing domain. This repository contains all the preprocessing, training, and evaluation files for this project; along with the supporting source data, and original research report. All the necessary files in this project were compiled in python with the added capability of being implementable on a standard laptop/CPU device.
+
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+According to the memory results available in the [main research report](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/Undergraduate_Report.pdf), the following approximate memory statistics are required to host a. Clone of the repository:
 
-### Prerequisites
+* *Volatile Memory* — *800MB*
+* *Non-Volatile Memory* — *22GB*
 
-What things you need to install the software and how to install them
+Along with these dependancies in order for the program to compile in accordance with the observations recorded in the research report, the following libraries versions are required:
 
+* *Python* — *3.7.4*
+* *Matplotlib* — *3.3.1* 
+* *NumPy* — *1.19.1* 
+* *Pandas* — *1.14* 
+* *PyTorch* — *1.7.0* 
+* *Scikit-learn* — *0.23.1*
+
+## Project Compilation
+
+Before running the various code, the respective project parameters must be tuned (found in [parameters.py](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/Parameters.py)). This includes indicating the local directory of the repository folder, training status of the machine learning models, dataset evaluation range, machine learning model to be analysed, and the fluid property which is to be visualised during contour generation.
+
+Once the project parameters have been modified, the project can be compiled by running the following steps:
+
+# Step 1 
+Load the CFD data by running [data_loader.py](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/data_loader.py).
+
+This can be achieved by entering the following into the shell:
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-These CFD data files were then loaded into Python (\textsl{version 3.7.4}) \cite{van1995python}, for use in the training and validation of the machine learning models. In the context of the project, the following python library versions where used to compile the associated programs:
-
-Matplotlib: 3.3.1
-NumPy: 1.19.1
-Pandas: 1.14
-PyTorch: 1.7.0
-Scikit-learn: 0.23.1
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+python ./data_loader.py
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+# Step 2 
+Preprocess the CFD data by running [preprocess.py](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/preprocessing.py).
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+This can be achieved by entering the following into the shell:
 ```
-Give an example
+python ./preprocess.py
 ```
 
-### And coding style tests
+# Step 3
+If training mode has been initialised then the respective models can be trained by running [model_training.py](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/model_training.py).
 
-Explain what these tests test and why
-
+This can be achieved by entering the following into the shell:
 ```
-Give an example
+python ./model_training.py
 ```
 
-## Deployment
+Else the model performance can be evaluated by running [model_evaluation.py](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/model_evaluation.py).
 
-Add additional notes about how to deploy this on a live system
+This can be achieved by entering the following into the shell:
+```
+python ./model_evaluation.py
+```
 
-## Built With
+Once each the python files have completely compiled the result of the evaluation should indicate the machine learning algorithm’s metadata, and the resulting CFD prediction contour and error frequency distributions as such:
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+()
 
 ## Acknowledgments
+All aknowledgments for the project development goes to: 
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Supervisor -- Dr Ryno Laubscher
 
