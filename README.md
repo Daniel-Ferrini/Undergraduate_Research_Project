@@ -59,7 +59,7 @@ python ./model_evaluation.py
 Once each the python files have completely compiled the result of the evaluation should indicate the machine learning algorithm’s metadata, and the resulting CFD prediction contour and error frequency distributions as such:
 
 
-()
+!(https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/CFD%20(1000%20dp)_files/Example_Image.png)
 
 # Acknowledgments
 All aknowledgments for the project development goes to: 
