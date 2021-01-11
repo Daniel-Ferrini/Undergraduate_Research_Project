@@ -62,10 +62,9 @@ Once each the python files have completely compiled the result of the evaluation
 ![contour_plot](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/CFD%20(1000%20dp)_files/Example_Image.png)
 
 
-![error_plot](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/CFD%20(1000%20dp)_files/Example Error.png)
+![error_plot](https://github.com/Daniel-Ferrini/Undergraduate_Research_Project/blob/main/CFD%20(1000%20dp)_files/Example_Error.png)
 
 # Acknowledgments
 All aknowledgments for the project development goes to: 
 
-* Supervisor -- Dr Ryno Laubscher
-
+* Supervisor — Dr Ryno Laubscher
